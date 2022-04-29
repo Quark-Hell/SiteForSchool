@@ -1,0 +1,211 @@
+<HTML>
+<HEAD>
+<TITLE>Компьютер</TITLE>
+
+<style>
+body{
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+
+background-image: url("images/Background.jpg");
+height: 100%;
+weigh:100%
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+position: relative;
+
+}
+
+.black-box { 
+width: 80%; 
+height: 90%; 
+margin-top: 50px; 
+margin-bottom: 50px; 
+margin-left: auto; 
+margin-right: auto;   
+  
+background: rgba(23,24,28,0.98);
+padding: 30px;
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+}
+
+.title1  {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: 900;
+}
+
+.title2  {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-weight: 900;
+}
+
+.title3  {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-weight: 900;
+}
+
+.DescriptionContain {
+
+}
+
+.ButtonContain {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  height: 5%; 
+}
+
+.button  {
+  background: white;
+  display: inline-block;
+  cursor: pointer;
+  width: 30%; 
+  height: 40px; 
+  margin-top: -15px; 
+  border-radius: 2px;
+  border: 1px solid black;
+  transition: all 0.5s;
+
+  background-color: #66b3ff;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;	
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  margin-top: 10px; 
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.ButtonDescription  {
+  color: black;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 4px;
+  font-weight: 900;
+}
+  
+.image  {
+  display: inline;
+  margin-left: 60%; 
+  margin-right: auto;   
+}
+
+.first-text  {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-style: italic;
+}
+.second-text  {
+  margin-top: 20px; 
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: right;
+  font-style: italic;
+}
+
+.featured:before {
+content: '+';
+font-weight: 400;
+display: inline-block;
+margin-right: 5px;
+color: #4CB1FF;
+}
+
+.vertical-text {width:50px; height:50px; margin: 30px 0 auto auto; background: #4CB1FF;}
+.vertical-text span {
+width: 50px;
+display: inline-block;
+text-align: center;
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+transform: rotate(-90deg);
+}
+</style>
+</HEAD>
+
+<BODY>
+
+<div class="black-box">   
+  <div class="ButtonContain">
+    <a class="button" href="Software.htm" align="center"><span>
+      <div class="ButtonDescription">Программы</div>
+    </a></span>
+    <a class="button" href="Glossary.htm" align="center"><span>
+      <div class="ButtonDescription">Словарь</div>
+    </a></span>
+    <a class="button" href="Anketa.htm" align="center"><span>
+      <div class="ButtonDescription">Анкеты</div>
+    </a></span>
+
+  </div>
+
+  <div class="title1">Всё о компьютерах</div>
+<HR>
+
+  <div class="DescriptionContain">
+    <div class="image"> <img src="images/Компьютер.png" align="right"> </div>
+    <div class="first-text">На этом сайте вы сможете получить различную информацию о компьютере,его программном обеспечение и ценах на компьютерное комплектующие</div>
+    <div class="second-text">Терминологический словарь познакомит вас с компьютерными терминами,а также вы сможете заполнить анкету</div>
+  </div>
+
+
+
+  <div class="title2">На этом сайте...</div>
+  <div class="title3">Терминологический словарь...</div>
+  <div class="featured">Test</div>
+  <div class="vertical-text"><span>VERTICAL</span></div> 
+</div>
+
+
+</BODY>
+</HTML>
