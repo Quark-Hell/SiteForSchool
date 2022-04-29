@@ -4,9 +4,12 @@
 
 <style>
 body{
+/*Дефолтные значения*/
 margin: 0;
 font-family: Arial, Helvetica, sans-serif;
+/*Дефолтные значения*/
 
+/*Фоновая картинка*/
 background-image: url("images/Background.jpg");
 height: 100%;
 weigh:100%
@@ -14,9 +17,11 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 position: relative;
+/*Фоновая картинка*/
 
 }
 
+/*Тёмный фон*/
 .black-box { 
 width: 80%; 
 height: 90%; 
@@ -36,7 +41,9 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 -o-border-radius: 5px;
 border-radius: 5px;
 }
+/*Тёмный фон*/
 
+/*главный заголовок*/
 .title1  {
   color: white;
   font-size: 40px;
@@ -45,28 +52,13 @@ border-radius: 5px;
   text-align: center;
   font-weight: 900;
 }
+/*главный заголовок*/
 
-.title2  {
-  color: white;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-family: Helvetica, Arial, sans-serif;
-  text-align: left;
-  font-weight: 900;
-}
-
-.title3  {
-  color: white;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-family: Helvetica, Arial, sans-serif;
-  text-align: left;
-  font-weight: 900;
-}
-
+/*Просто контейнер для текста*/
 .DescriptionContain {
 
 }
+/*Просто контейнер для текста*/
 
 .ButtonContain {
   display: flex;
@@ -74,7 +66,7 @@ border-radius: 5px;
   width: 100%; 
   height: 5%; 
 }
-
+/*код кнопки*/
 .button  {
   background: white;
   display: inline-block;
@@ -116,7 +108,9 @@ border-radius: 5px;
   opacity: 1;
   right: 0;
 }
+/*код кнопки*/
 
+/*Текст на кнопках*/
 .ButtonDescription  {
   color: black;
   font-size: 20px;
@@ -126,13 +120,13 @@ border-radius: 5px;
   margin-top: 4px;
   font-weight: 900;
 }
-  
+/*Картинка компьютера*/
 .image  {
   display: inline;
   margin-left: 60%; 
   margin-right: auto;   
 }
-
+/*На этом сайте...*/
 .first-text  {
   color: white;
   font-size: 14px;
@@ -141,6 +135,9 @@ border-radius: 5px;
   text-align: left;
   font-style: italic;
 }
+/*На этом сайте...*/
+
+/*Терминологический словарь...*/
 .second-text  {
   margin-top: 20px; 
   color: white;
@@ -150,32 +147,14 @@ border-radius: 5px;
   text-align: right;
   font-style: italic;
 }
-
-.featured:before {
-content: '+';
-font-weight: 400;
-display: inline-block;
-margin-right: 5px;
-color: #4CB1FF;
-}
-
-.vertical-text {width:50px; height:50px; margin: 30px 0 auto auto; background: #4CB1FF;}
-.vertical-text span {
-width: 50px;
-display: inline-block;
-text-align: center;
--webkit-transform: rotate(-90deg);
--moz-transform: rotate(-90deg);
--ms-transform: rotate(-90deg);
--o-transform: rotate(-90deg);
-transform: rotate(-90deg);
-}
+/*Терминологический словарь...*/
 </style>
 </HEAD>
 
 <BODY>
 
 <div class="black-box">   
+<! --Кнопки-->
   <div class="ButtonContain">
     <a class="button" href="Software.htm" align="center"><span>
       <div class="ButtonDescription">Программы</div>
@@ -186,24 +165,18 @@ transform: rotate(-90deg);
     <a class="button" href="Anketa.htm" align="center"><span>
       <div class="ButtonDescription">Анкеты</div>
     </a></span>
-
   </div>
+<! --Кнопки-->
 
+<! --Остальной текст и картинка-->
   <div class="title1">Всё о компьютерах</div>
 <HR>
-
   <div class="DescriptionContain">
     <div class="image"> <img src="images/Компьютер.png" align="right"> </div>
     <div class="first-text">На этом сайте вы сможете получить различную информацию о компьютере,его программном обеспечение и ценах на компьютерное комплектующие</div>
     <div class="second-text">Терминологический словарь познакомит вас с компьютерными терминами,а также вы сможете заполнить анкету</div>
   </div>
-
-
-
-  <div class="title2">На этом сайте...</div>
-  <div class="title3">Терминологический словарь...</div>
-  <div class="featured">Test</div>
-  <div class="vertical-text"><span>VERTICAL</span></div> 
+<! --Остальной текст и картинка-->
 </div>
 
 
