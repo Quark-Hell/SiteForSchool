@@ -1,9 +1,119 @@
 <HTML>
 <HEAD>
-  <TITLE>Заголовок Страницы</TITLE>
+    <TITLE>Программы</TITLE>
+
+    <style>
+        body {
+            /*Дефолтные значения*/
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("images/SoftBack.jpg");
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            /*Дефолтные значения*/
+        }
+        /*Тёмный фон*/
+        .black-box {
+            width: 80%;
+            height: 90%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgba(23,24,28,0.98);
+            padding: 30px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        /*Тёмный фон*/
+
+        /*главный заголовок*/
+        .title1 {
+            color: white;
+            font-size: 40px;
+            letter-spacing: 1px;
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: center;
+            font-weight: 900;
+        }
+        /*главный заголовок*/
+
+        /*Нумерованный список*/
+        .rectangle {
+            counter-reset: li;
+            list-style: none;
+            font: 17px "Trebuchet MS", "Lucida Sans";
+            font-weight: 900;
+            padding: 0;
+            text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        }
+
+            .rectangle a {
+                position: relative;
+                display: block;
+                padding: .4em .4em .4em .8em;
+                margin: .5em 0 .5em 2.5em;
+                background: #D3D4DA;
+                color: #444;
+                cursor: default;
+            }
+
+            .rectangle li::before {
+                content: counter(li);
+                counter-increment: li;
+                position: absolute;
+                background: #9097A2;
+                height: 2em;
+                width: 2em;
+                line-height: 2em;
+                text-align: center;
+                font-weight: bold;
+            }
+        /*Нумерованный список*/
+
+        /*Ненумерованный список*/
+        .NonNumList {
+            font: 15px "Trebuchet MS", "Lucida Sans";
+            font-weight: normal;
+            margin-left: 2%;
+        }
+
+        .NonNumList li::before {
+            counter-reset: li;
+            content: " ";
+            background-image: linear-gradient(-45deg, red, yellow);
+            font-weight: normal;
+        }
+        /*Ненумерованный список*/
+    </style>
 </HEAD>
 
 <BODY>
-</BODY>
 
+    <div class="black-box">
+        <div class="title1">Программное обеспечение</div>
+        <HR>
+
+        <ol class="rectangle">
+            <li><a>Системные программы</a></li>
+            <li><a>Прикладные программы</a></li>
+                <ul class="NonNumList" TYPE="none">
+                    <li><a>текстовые редакторы</a></li>
+                    <li><a>графические редакторы</a></li>
+                    <li><a>электронные таблицы</a></li>
+                    <li><a>системы управления базами данных</a></li>
+                </ul>
+            <li><a>Системы программирования</a></li>
+        </ol>
+    </div>
+
+</BODY>
 </HTML>
