@@ -1,9 +1,119 @@
 <HTML>
 <HEAD>
-    <TITLE>Заголовок Страницы</TITLE>
+    <TITLE>Словарь</TITLE>
+
+    <style>
+        body {
+            /*Дефолтные значения*/
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("images/SoftBack.jpg");
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            /*Дефолтные значения*/
+        }
+        /*Тёмный фон*/
+        .black-box {
+            width: 80%;
+            height: 90%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgba(23,24,28,0.98);
+            padding: 30px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        /*Тёмный фон*/
+
+        /*главный заголовок*/
+        .title1 {
+            color: white;
+            font-size: 40px;
+            letter-spacing: 1px;
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: center;
+            font-weight: 900;
+        }
+        /*главный заголовок*/
+
+        container {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .back {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 100%;
+            height: 35%;
+            margin-right: 25px;
+        }
+
+        /*Название элемента*/
+        .NameOfComputerElement {
+            color: white;
+            font-size: 25px;
+            letter-spacing: 1px;
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: center;
+            font-weight: 900;
+            margin-bottom: 1%;
+            margin-top: 1%;
+            text-shadow: 3px 3px #222222;
+        }
+        /*Название элемента*/
+
+        /*Описание элемента*/
+        .DescriptionOfComputerElement {
+            color: white;
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        /*Описание элемента*/
+
+        .CPUimage {
+            width: 40%;
+            height: 100%;
+        }
+
+        .RAMimage {
+            width: 55%;
+            height: 100%;
+        }
+
+    </style>
 </HEAD>
 
 <BODY>
-</BODY>
 
+    <div class="black-box">
+        <div class="title1">Компьютерные термины</div>
+        <HR>
+        <dl>
+            <dt class="NameOfComputerElement"> Процессор </dt>
+            <div class="back">
+                <img src="images/CPU.jpg" class="CPUimage" align="left">
+                <p align="left" class="DescriptionOfComputerElement">  Центральное устройство компьютера, производящее обработку информации в двоичном коде. </p>
+            </div>
+
+            <dt class="NameOfComputerElement"> Оперативная память </dt>
+            <div class="back" >
+                <img src="images/RAM.png" class="RAMimage" align="right" >
+                <p align="left" class="DescriptionOfComputerElement">  Устройство, в котором хранятся программы и данные. </p>
+            </div>
+        </dl>
+    </div>
+
+</BODY>
 </HTML>
